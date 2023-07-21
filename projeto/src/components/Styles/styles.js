@@ -1,32 +1,49 @@
 import styled from 'styled-components';
 
 export const Title = styled.h1`
-    font-family: sans-serif;
-    color: #00f;
-    font-size: 3rem;
+    color: #0D0D0D;
+    font-size: 40px;
+    margin-top: 24px;
 
-    span {
-        color: #f00;
+    span{
+        color: #c4c4c4;
+        font-size: 32px ;
         display: block;
     }
 `;
 
-export const Btn = styled.button`
-    border: 0;
-    border-radius: 5px;
-    background-color: #00f;
-    color: #fff;
-    margin: 10px auto;
-    display: block;
-    padding: 10px;
-    font-size: ${props => `${props.font}px`} ;
+export const SubTitulo = styled.h2`
+    margin-top: 60px;
+    font-size: 24px;
+    color: #0D0D0D;
+`
 
-    :before {
-        content: "${props => `${props.name}`}";
+export const Container = styled.div`
+    max-width: 1024px;
+    width: 100%;
+    margin: 0 auto;
+    padding-top: 50px;
+    padding-bottom: 50px;
+
+    @media (max-width: 768px){
+        width: 90%;
+    }
+    @media (min-width: 768px) and (max-width: 1022px){
+        width: 90%;
     }
 `
 
-export const BtnNew = styled(Btn)`
-    background-color: #090;
-`;
+export const GridHabilidades = styled.div`
+    display: grid;
+    grid-template-columns: 1fr 1fr;
 
+`
+
+export const Item = styled.h3`
+    color: #777777;
+    margin: 16px 0;
+    span{
+        font-size: 16px;
+        color: #c4c4c4;
+    }
+`
